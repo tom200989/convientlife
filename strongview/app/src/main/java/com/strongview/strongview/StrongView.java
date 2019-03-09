@@ -27,7 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
- * Created by qianli.ma on 2019/3/8 0008.
+ * Created by qianli.ma on 2019/3/9 0008.
  */
 public class StrongView extends LinearLayout {
 
