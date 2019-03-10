@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hiber.tools.layout.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_guide_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bt_seletor"
+        android:gravity="center"
+        android:text="@string/guide_start"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_heightPercent="7%h"
+        app:layout_marginBottomPercent="3%h"
+        app:layout_textSizePercent="2.5%h"
+        app:layout_widthPercent="50%w" />
+
+    <com.hiber.tools.layout.PercentLinearLayout
+        android:id="@+id/ll_dot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_guide_start"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_heightPercent="5%h"
+        app:layout_marginBottomPercent="2%h" />
+
+    <TextView
+        android:id="@+id/tv_guide_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_dot"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textStyle="normal"
+        app:layout_marginBottomPercent="5%h"
+        app:layout_textSizePercent="4%h" />
+
+</com.hiber.tools.layout.PercentRelativeLayout>

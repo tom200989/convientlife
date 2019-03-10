@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">便捷生活</string>
+    <string name="app_title">便捷生活APP</string>
+    <string name="copyright">copyright by liyixia in 2019 - 2050</string>
+    <string name="guide_start">立即开启</string>
+    <string name="guide_1">便捷生活,无需出门</string>
+    <string name="guide_2">掌握理财, 理性消费</string>
+    <string name="guide_3">节约时间, 为您省钱</string>
+
+    <string name="home_fanyi">翻译</string>
+    <string name="home_dianyingpiao">电影票</string>
+    <string name="home_huochepiao">火车票</string>
+    <string name="home_kuaidichaxun">快递</string>
+    <string name="home_weixinjingxuan">微信精选</string>
+    <string name="home_xingzuoyunshi">星座运势</string>
+    <string name="home_xinwentoutiao">新闻头条</string>
+    <string name="fanyi_input_ori">请输入原文</string>
+
+    <string name="fanyi_china">中文</string>
+    <string name="fanyi_japan">日语</string>
+    <string name="fanyi_english">英语</string>
+    <string name="fanyi_korea">韩语</string>
+    <string name="fanyi_franch">法语</string>
+    <string name="fanyi_russia">俄语</string>
+    <string name="fanyi_portugal">葡萄牙语</string>
+    <string name="fanyi_spain">西班牙语</string>
+    <string name="please_input_your_origin_text">Please input your origin text</string>
+    <string name="date">日期: %s</string>
+    <string name="to">到</string>
+    <string name="train_from">出发地</string>
+    <string name="train_to">目的地</string>
+    <string name="query">查询</string>
+    <string name="train_class">班次</string>
+    <string name="train_from_place">出发站</string>
+    <string name="train_to_place">到达站</string>
+    <string name="train_from_time">发时</string>
+    <string name="train_to_time">到时</string>
+    <string name="train_duration">历时</string>
+
+</resources>

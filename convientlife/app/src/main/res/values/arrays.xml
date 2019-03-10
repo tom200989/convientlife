@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fanyi">
+        <item>@string/fanyi_china</item>
+        <item>@string/fanyi_japan</item>
+        <item>@string/fanyi_english</item>
+        <item>@string/fanyi_korea</item>
+        <item>@string/fanyi_franch</item>
+        <item>@string/fanyi_russia</item>
+        <item>@string/fanyi_portugal</item>
+        <item>@string/fanyi_spain</item>
+    </string-array>
+</resources>
