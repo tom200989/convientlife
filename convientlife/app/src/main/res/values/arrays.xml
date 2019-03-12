@@ -10,4 +10,19 @@
         <item>@string/fanyi_portugal</item>
         <item>@string/fanyi_spain</item>
     </string-array>
+
+    <string-array name="xingzuo">
+        <item>@string/xingzuo_baiyang</item>
+        <item>@string/xingzuo_jiniu</item>
+        <item>@string/xingzuo_shuangzi</item>
+        <item>@string/xingzuo_juxie</item>
+        <item>@string/xingzuo_shizi</item>
+        <item>@string/xingzuo_chunv</item>
+        <item>@string/xingzuo_tianping</item>
+        <item>@string/xingzuo_tianxie</item>
+        <item>@string/xingzuo_sheshou</item>
+        <item>@string/xingzuo_mojie</item>
+        <item>@string/xingzuo_shuiping</item>
+        <item>@string/xingzuo_shuangyu</item>
+    </string-array>
 </resources>

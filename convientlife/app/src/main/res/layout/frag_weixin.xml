@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hiber.tools.layout.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- banner -->
+    <com.hiber.tools.layout.PercentRelativeLayout
+        android:id="@+id/rl_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_heightPercent="9%h">
+
+        <ImageView
+            android:id="@+id/iv_weixin_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/back"
+            app:layout_heightPercent="40%h"
+            app:layout_widthPercent="40%h" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/home_weixinjingxuan"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_textSizePercent="33%h" />
+
+    </com.hiber.tools.layout.PercentRelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_banner"
+        android:layout_margin="10dp" />
+
+    <WebView
+        android:id="@+id/wv_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_banner"
+        android:visibility="gone" />
+
+</com.hiber.tools.layout.PercentRelativeLayout>

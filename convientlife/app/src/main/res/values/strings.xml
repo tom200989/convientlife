@@ -24,6 +24,7 @@
     <string name="fanyi_russia">俄语</string>
     <string name="fanyi_portugal">葡萄牙语</string>
     <string name="fanyi_spain">西班牙语</string>
+
     <string name="please_input_your_origin_text">Please input your origin text</string>
     <string name="date">日期: %s</string>
     <string name="to">到</string>
@@ -36,5 +37,32 @@
     <string name="train_from_time">发时</string>
     <string name="train_to_time">到时</string>
     <string name="train_duration">历时</string>
+    <string name="input_your_express_num">请输入你的快递号</string>
+
+    <string name="xingzuo_baiyang">白羊座</string>
+    <string name="xingzuo_jiniu">金牛座</string>
+    <string name="xingzuo_shuangzi">双子座</string>
+    <string name="xingzuo_juxie">巨蟹座</string>
+    <string name="xingzuo_shizi">狮子座</string>
+    <string name="xingzuo_chunv">处女座</string>
+    <string name="xingzuo_tianping">天平座</string>
+    <string name="xingzuo_tianxie">天蝎座</string>
+    <string name="xingzuo_sheshou">射手座</string>
+    <string name="xingzuo_mojie">摩羯座</string>
+    <string name="xingzuo_shuiping">水瓶座</string>
+    <string name="xingzuo_shuangyu">双鱼座</string>
+    
+    <string name="xingzuo_date">日期: %s</string>
+    <string name="xingzuo_name">星座: %s</string>
+    <string name="xingzuo_datetime">当前时间: %s</string>
+    <string name="xingzuo_all">整体运势: %s</string>
+    <string name="xingzuo_color">适合颜色: %s</string>
+    <string name="xingzuo_health">健康: %s</string>
+    <string name="xingzuo_love">受欢迎度: %s</string>
+    <string name="xingzuo_money">财运: %s</string>
+    <string name="xingzuo_number">幸运数字: %s</string>
+    <string name="xingzuo_friend">速配星座: %s</string>
+    <string name="xingzuo_summary">建议: %s</string>
+    <string name="xingzuo_work">工作: %s</string>
 
 </resources>

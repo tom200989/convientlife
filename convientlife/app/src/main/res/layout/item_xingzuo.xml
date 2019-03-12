@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hiber.tools.layout.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_xingzuo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="@drawable/bt2_seletor"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        app:layout_heightPercent="25%sh"
+        app:layout_textSizePercent="3%sh"
+        app:layout_widthPercent="33.33%sw" />
+
+</com.hiber.tools.layout.PercentRelativeLayout>
