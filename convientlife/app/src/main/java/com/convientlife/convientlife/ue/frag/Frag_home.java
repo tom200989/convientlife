@@ -1,17 +1,28 @@
 package com.convientlife.convientlife.ue.frag;
 
+import android.Manifest;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.StringRes;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.GridLayout;
+import android.widget.TextView;
 
+import com.alibaba.fastjson.JSONObject;
 import com.convientlife.convientlife.R;
 import com.convientlife.convientlife.adapter.HomeAdapter;
 import com.convientlife.convientlife.bean.HomeBean;
+import com.convientlife.convientlife.bean.WeatherBean;
+import com.example.administrator.gps.BaiduUtils;
 import com.hiber.hiber.RootFrag;
+
+import org.xutils.common.Callback;
+import org.xutils.http.RequestParams;
+import org.xutils.http.request.UriRequest;
+import org.xutils.x;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +36,10 @@ public class Frag_home extends RootFrag {
 
     @BindView(R.id.rcv_home)
     RecyclerView rcvHome;
+    @BindView(R.id.tv_home_weather)
+    TextView tvWeather;
+    @BindView(R.id.tv_home_quit)
+    TextView tvQuit;
 
     private List<Drawable> iconList = new ArrayList<>();
     private List<String> titleList = new ArrayList<>();
@@ -46,18 +61,90 @@ public class Frag_home extends RootFrag {
 
     @Override
     public void initViewFinish() {
-        super.initViewFinish();
         initRes();
         setAdapter();
+        initClick();
+    }
+
+    @Override
+    public String[] initPermissed() {
+        String[] permissions = {//
+                Manifest.permission.ACCESS_FINE_LOCATION, //
+                Manifest.permission.READ_PHONE_STATE,//
+                Manifest.permission.WRITE_EXTERNAL_STORAGE};//
+        return permissions;
+    }
+
+    private void getWeathter() {
+
+        BaiduUtils baiduUtils = new BaiduUtils();
+        baiduUtils.setOnGetLocationSuccessListener(bdLocation -> {
+
+            String city = bdLocation.getCity().replace("市", "");
+            String district = bdLocation.getDistrict();
+            String street = bdLocation.getStreet();
+
+            Log.v("ma_baidu", "city: " + city);
+            Log.v("ma_baidu", "district: " + district);
+            Log.v("ma_baidu", "street: " + street);
+
+            RequestParams rp = new RequestParams("http://apis.juhe.cn/simpleWeather/query");
+            rp.addQueryStringParameter("key", "dadad1162c26df95628cccb4d5960bb6");
+            rp.addQueryStringParameter("city", city);
+            x.http().get(rp, new Callback.CommonCallback<String>() {
+                @Override
+                public void responseBody(UriRequest uriRequest) {
+
+                }
+
+                @Override
+                public void onSuccess(String json) {
+                    WeatherBean weatherBean = JSONObject.parseObject(json, WeatherBean.class);
+                    if (weatherBean.getError_code() == 0) {
+                        String city = weatherBean.getResult().getCity();
+                        WeatherBean.ResultBean.RealtimeBean realtime = weatherBean.getResult().getRealtime();
+                        String info = realtime.getInfo();// 多云
+                        String temperature = realtime.getTemperature();
+
+                        String content = city + district + street + " " + info + " " + temperature + "℃";
+                        tvWeather.setText(content);
+                    } else {
+                        int error_code = weatherBean.getError_code();
+                        Log.e("ma_baidu", "error: " + error_code);
+                    }
+                }
+
+                @Override
+                public void onError(Throwable throwable, boolean b) {
+
+                }
+
+                @Override
+                public void onCancelled(CancelledException e) {
+
+                }
+
+                @Override
+                public void onFinished() {
+
+                }
+            });
+        });
+        baiduUtils.init(activity);
+
+
+    }
+
+    private void initClick() {
+        tvQuit.setOnClickListener(v -> kill());
     }
 
     @Override
     public void onNexts(Object o, View view, String s) {
-
+        getWeathter();
     }
 
     private void initRes() {
-
 
         iconList = getIcon(R.drawable.icon_fanyi,// 翻译
                 R.drawable.icon_h5dianyingpiao,// 电影票 

@@ -135,6 +135,7 @@ public class Frag_Fanyi extends RootFrag {
             @Override
             public void onError(Throwable throwable, boolean b) {
                 Lgg.t(getClass().getSimpleName()).ee(throwable.getMessage());
+                toast("网络异常", 2000);
             }
 
             @Override
