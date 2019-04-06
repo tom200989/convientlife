@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hiber.tools.layout.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- LOGO -->
+    <ImageView
+        android:id="@+id/iv_login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/applogo"
+        app:layout_heightPercent="20%w"
+        app:layout_marginTopPercent="10%h"
+        app:layout_widthPercent="20%w" />
+
+    <!-- input username -->
+    <com.hiber.tools.layout.PercentRelativeLayout
+        android:id="@+id/rl_login_input_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_login_logo"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="8%h"
+        app:layout_marginTopPercent="5%h"
+        app:layout_widthPercent="70%w">
+
+        <ImageView
+            android:id="@+id/iv_login_username_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/username_logo"
+            app:layout_heightPercent="50%h"
+            app:layout_marginBottomPercent="15%h"
+            app:layout_widthPercent="50%h" />
+
+        <EditText
+            android:id="@+id/et_login_input_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/iv_login_username_logo"
+            android:background="@null"
+            android:gravity="bottom"
+            android:hint="@string/login_input_hint_username"
+            android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/colorCompanyDark"
+            android:textColorHint="@color/colorCompany"
+            android:textCursorDrawable="@null"
+            app:layout_paddingBottomPercent="15%h"
+            app:layout_textSizePercent="30%h" />
+
+        <View
+            android:id="@+id/v_login_input_username_line"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorCompanyDark" />
+    </com.hiber.tools.layout.PercentRelativeLayout>
+
+    <!-- input password -->
+    <com.hiber.tools.layout.PercentRelativeLayout
+        android:id="@+id/rl_login_input_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_login_input_username"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="8%h"
+        app:layout_marginTopPercent="3%h"
+        app:layout_widthPercent="70%w">
+
+        <ImageView
+            android:id="@+id/iv_login_password_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/password_logo"
+            app:layout_heightPercent="50%h"
+            app:layout_marginBottomPercent="15%h"
+            app:layout_widthPercent="50%h" />
+
+        <EditText
+            android:id="@+id/et_login_input_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/iv_login_password_logo"
+            android:background="@null"
+            android:gravity="bottom"
+            android:hint="@string/login_input_hint_password"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/colorCompanyDark"
+            android:textColorHint="@color/colorCompany"
+            android:textCursorDrawable="@null"
+            app:layout_paddingBottomPercent="15%h"
+            app:layout_textSizePercent="30%h" />
+
+        <View
+            android:id="@+id/v_login_input_password_line"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorCompany" />
+
+        <ImageView
+            android:id="@+id/iv_login_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/unvisible_eye"
+            app:layout_heightPercent="90%h"
+            app:layout_paddingPercent="25%h"
+            app:layout_widthPercent="90%h" />
+    </com.hiber.tools.layout.PercentRelativeLayout>
+
+    <!-- remember password -->
+    <com.hiber.tools.layout.PercentRelativeLayout
+        android:id="@+id/rl_login_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_login_input_password"
+        app:layout_heightPercent="5%h"
+        app:layout_marginLeftPercent="15%w"
+        app:layout_marginTopPercent="3%h"
+        app:layout_widthPercent="40%w">
+
+        <ImageView
+            android:id="@+id/iv_login_remember_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/privacy_checkbox_checked"
+            app:layout_heightPercent="80%h"
+            app:layout_widthPercent="80%h" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/iv_login_remember_checkbox"
+            android:gravity="center_vertical"
+            android:text="@string/login_remember"
+            android:textColor="@color/colorCompanyDark"
+            app:layout_textSizePercent="50%h" />
+
+    </com.hiber.tools.layout.PercentRelativeLayout>
+
+    <!-- forgot password -->
+    <TextView
+        android:id="@+id/tv_login_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_login_input_password"
+        android:layout_alignParentEnd="true"
+        android:gravity="end|center_vertical"
+        android:text="@string/login_forgot"
+        android:textColor="@color/colorCompanyDark"
+        app:layout_heightPercent="5%h"
+        app:layout_marginLeftPercent="15%w"
+        app:layout_marginRightPercent="15%w"
+        app:layout_marginTopPercent="3%h"
+        app:layout_textSizePercent="2.5%h"
+        app:layout_widthPercent="20%w" />
+
+    <!-- login button -->
+    <TextView
+        android:id="@+id/tv_login_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_login_forgot"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_login_click_selector"
+        android:gravity="center"
+        android:text="@string/login_bottom_text"
+        android:textColor="@android:color/white"
+        app:layout_heightPercent="6.5%h"
+        app:layout_marginTopPercent="4%h"
+        app:layout_textSizePercent="2.5%h"
+        app:layout_widthPercent="70%w" />
+
+    <!-- register -->
+    <TextView
+        android:id="@+id/tv_login_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login_click"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/register_text"
+        android:textColor="@color/colorCompany"
+        app:layout_heightPercent="6%h"
+        app:layout_marginTopPercent="3%h"
+        app:layout_textSizePercent="2.5%h"
+        app:layout_widthPercent="30%w" />
+
+    <!-- wave -->
+    <com.qianli.WaveView
+        android:id="@+id/wv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        app:above_wave_color="@color/colorCompany"
+        app:blow_wave_color="@color/colorCompanyDark"
+        app:layout_heightPercent="20%h"
+        app:progress="90"
+        app:wave_height="large"
+        app:wave_hz="slow"
+        app:wave_length="middle" />
+
+    <!-- wechat login -->
+    <ImageView
+        android:id="@+id/iv_login_wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/wechat_logo"
+        app:layout_heightPercent="8%h"
+        app:layout_marginBottomPercent="5%h"
+        app:layout_widthPercent="8%h" />
+
+    <!-- waitting -->
+    <xsda.xsda.widget.WaitingWidget
+        android:id="@+id/widget_login_waitting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <!-- authorized loading -->
+    <xsda.xsda.widget.AuthorizedLoadWidget
+        android:id="@+id/widget_login_authorized"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</com.hiber.tools.layout.PercentRelativeLayout>

@@ -1,0 +1,32 @@
+****** aar包说明:
+hiber.aar       --> 项目的Activity与Fragment架构包
+rsa.jar         --> aes\des\rsa加密包
+keys.aar        --> leanCloud的appid appkey
+
+****** 构建说明:
+1.本项目全部采用封装好的roothiber.aar架构
+2.网络请求统一采用leanClound + xutils
+3.加密方式采用Des128 + RSA等组合加密
+4.为适配所有的安卓手机屏幕, 均采用百分比布局percentLayout
+5.资源文件能在根activity加载的尽量加载
+6.支付模块的方式待定(租用服务器或者个人二维码)
+
+注意事项:
+1.AvObject.getAvFile(key): key指的是存放文件时所对应的那个字段值
+2.检测新版本, 先检测xsdaApk目录, 
+apkcode: 当前安装包的版本
+leancode: 网络上的版本
+currentcode: 当前安装的版本
+----------------------------------------------------------
+-   if(leancode > currentcode)--> 网络版本 > 当前运行版本
+-       if(apkcode == leancode) --> 说明下载过--> 显示安装
+-       else --> 显示下载
+-   else --> 继续运行
+----------------------------------------------------------
+
+3.架构采用新封装的roothiber.aar架构
+
+******* TODO:待添加
+1.判断是否为模拟器
+2.项目结束时对roothiber包使用360加固的SDK加密功能进行加密
+3.用户使用微信登陆, 但却去修改密码
