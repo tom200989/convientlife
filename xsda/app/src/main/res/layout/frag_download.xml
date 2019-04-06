@@ -54,7 +54,7 @@
                 android:layout_margin="15dp"
                 android:text="@string/check_update_default_des"
                 android:textColor="@color/colorCompany"
-                app:layout_textSizePercent="2.3%sh" />
+                app:layout_textSizePercent="2.5%sh" />
 
         </ScrollView>
 

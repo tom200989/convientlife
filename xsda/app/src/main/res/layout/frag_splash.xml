@@ -26,7 +26,7 @@
         android:text="更懂你的心"
         android:textColor="@color/colorCompany"
         app:layout_marginTopPercent="5%h"
-        app:layout_textSizePercent="2.8%h" />
+        app:layout_textSizePercent="2.5%h" />
 
     <!-- copyright -->
     <TextView

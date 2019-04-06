@@ -41,8 +41,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="10dp"
                 android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:background="@color/colorCompany" />
 
         </com.hiber.tools.layout.PercentRelativeLayout>
@@ -56,7 +56,7 @@
             android:layout_centerHorizontal="true"
             android:alpha="0.7"
             android:src="@drawable/forgot_logo"
-            app:layout_heightPercent="15%h"
+            app:layout_heightPercent="12%h"
             app:layout_marginTopPercent="3%h"
             app:layout_widthPercent="22%w" />
 
@@ -69,17 +69,16 @@
             android:layout_centerHorizontal="true"
             app:layout_heightPercent="8%h"
             app:layout_marginTopPercent="3%h"
-            app:layout_widthPercent="70%w">
+            app:layout_widthPercent="80%w">
 
             <ImageView
                 android:id="@+id/iv_forgot_username_logo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
                 android:src="@drawable/username_logo"
-                app:layout_heightPercent="50%h"
-                app:layout_marginBottomPercent="15%h"
-                app:layout_widthPercent="50%h" />
+                app:layout_heightPercent="40%h"
+                app:layout_widthPercent="40%h" />
 
             <EditText
                 android:id="@+id/et_forgot_input_username"
@@ -87,18 +86,16 @@
                 android:layout_height="match_parent"
                 android:layout_toEndOf="@id/iv_forgot_username_logo"
                 android:background="@null"
-                android:gravity="bottom"
                 android:hint="@string/login_input_hint_username"
                 android:inputType="number"
                 android:maxLength="11"
                 android:maxLines="1"
-                android:paddingEnd="5dp"
                 android:paddingStart="5dp"
+                android:paddingEnd="5dp"
                 android:textColor="@color/colorCompanyDark"
                 android:textColorHint="@color/colorCompany"
                 android:textCursorDrawable="@null"
-                app:layout_paddingBottomPercent="15%h"
-                app:layout_textSizePercent="30%h" />
+                app:layout_textSizePercent="25%h" />
 
             <View
                 android:id="@+id/v_forgot_username_line"
@@ -118,38 +115,35 @@
             android:layout_centerHorizontal="true"
             app:layout_heightPercent="8%h"
             app:layout_marginTopPercent="2%h"
-            app:layout_widthPercent="70%w">
+            app:layout_widthPercent="80%w">
 
             <ImageView
                 android:id="@+id/iv_forgot_password_logo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
                 android:src="@drawable/password_logo"
-                app:layout_heightPercent="50%h"
-                app:layout_marginBottomPercent="15%h"
-                app:layout_widthPercent="50%h" />
+                app:layout_heightPercent="40%h"
+                app:layout_widthPercent="40%h" />
 
             <EditText
                 android:id="@+id/et_forgot_input_password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_alignParentEnd="true"
                 android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
                 android:layout_toEndOf="@id/iv_forgot_password_logo"
                 android:background="@null"
-                android:gravity="bottom"
                 android:hint="@string/forgot_input_hint_password"
                 android:inputType="textPassword"
                 android:maxLength="16"
                 android:maxLines="1"
-                android:paddingEnd="5dp"
                 android:paddingStart="5dp"
+                android:paddingEnd="5dp"
                 android:textColor="@color/colorCompanyDark"
                 android:textColorHint="@color/colorCompany"
                 android:textCursorDrawable="@null"
-                app:layout_paddingBottomPercent="15%h"
-                app:layout_textSizePercent="30%h" />
+                app:layout_textSizePercent="25%h" />
 
             <View
                 android:id="@+id/v_forgot_password_line"
@@ -169,17 +163,16 @@
             android:layout_centerHorizontal="true"
             app:layout_heightPercent="8%h"
             app:layout_marginTopPercent="2%h"
-            app:layout_widthPercent="70%w">
+            app:layout_widthPercent="80%w">
 
             <ImageView
                 android:id="@+id/iv_forgot_confirmPassword_logo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
                 android:src="@drawable/confirmpassword_logo"
-                app:layout_heightPercent="50%h"
-                app:layout_marginBottomPercent="15%h"
-                app:layout_widthPercent="50%h" />
+                app:layout_heightPercent="40%h"
+                app:layout_widthPercent="40%h" />
 
             <EditText
                 android:id="@+id/et_forgot_input_confirmPassword"
@@ -187,18 +180,16 @@
                 android:layout_height="match_parent"
                 android:layout_toEndOf="@id/iv_forgot_confirmPassword_logo"
                 android:background="@null"
-                android:gravity="bottom"
                 android:hint="@string/forgot_input_hint_confirmpassword"
                 android:inputType="textPassword"
                 android:maxLength="16"
                 android:maxLines="1"
-                android:paddingEnd="5dp"
                 android:paddingStart="5dp"
+                android:paddingEnd="5dp"
                 android:textColor="@color/colorCompanyDark"
                 android:textColorHint="@color/colorCompany"
                 android:textCursorDrawable="@null"
-                app:layout_paddingBottomPercent="15%h"
-                app:layout_textSizePercent="30%h" />
+                app:layout_textSizePercent="25%h" />
 
             <View
                 android:id="@+id/v_forgot_confirmPassword_line"
@@ -218,17 +209,16 @@
             android:layout_centerHorizontal="true"
             app:layout_heightPercent="8%h"
             app:layout_marginTopPercent="2%h"
-            app:layout_widthPercent="70%w">
+            app:layout_widthPercent="80%w">
 
             <ImageView
                 android:id="@+id/iv_forgot_verifyCode_logo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
                 android:src="@drawable/verify_logo"
-                app:layout_heightPercent="50%h"
-                app:layout_marginBottomPercent="15%h"
-                app:layout_widthPercent="50%h" />
+                app:layout_heightPercent="40%h"
+                app:layout_widthPercent="40%h" />
 
             <TextView
                 android:id="@+id/tv_forgot_getVerifyCode"
@@ -236,31 +226,29 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:gravity="bottom"
+                android:gravity="center"
                 android:text="@string/register_get_verifycode"
                 android:textColor="@color/colorCompanyDark"
                 app:layout_heightPercent="100%h"
-                app:layout_paddingBottomPercent="15%h" />
+                app:layout_textSizePercent="25%h" />
 
             <EditText
                 android:id="@+id/et_forgot_input_verifyCode"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_toEndOf="@id/iv_forgot_verifyCode_logo"
                 android:layout_toStartOf="@id/tv_forgot_getVerifyCode"
+                android:layout_toEndOf="@id/iv_forgot_verifyCode_logo"
                 android:background="@null"
-                android:gravity="bottom"
                 android:hint="@string/register_input_hint_verifycode"
                 android:inputType="text"
                 android:maxLength="10"
                 android:maxLines="1"
-                android:paddingEnd="5dp"
                 android:paddingStart="5dp"
+                android:paddingEnd="5dp"
                 android:textColor="@color/colorCompanyDark"
                 android:textColorHint="@color/colorCompany"
                 android:textCursorDrawable="@null"
-                app:layout_paddingBottomPercent="15%h"
-                app:layout_textSizePercent="30%h" />
+                app:layout_textSizePercent="25%h" />
 
             <View
                 android:id="@+id/v_forgot_verifyCode_line"
@@ -284,7 +272,8 @@
             android:textColor="@android:color/white"
             app:layout_heightPercent="7%h"
             app:layout_marginTopPercent="10%h"
-            app:layout_widthPercent="70%w" />
+            app:layout_textSizePercent="2%h"
+            app:layout_widthPercent="80%w" />
 
     </com.hiber.tools.layout.PercentRelativeLayout>
 

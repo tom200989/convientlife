@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:background="@drawable/bg_conner_8"
-        app:layout_heightPercent="10%h"
+        app:layout_heightPercent="8%h"
         app:layout_widthPercent="80%w">
 
         <ImageView
@@ -27,8 +27,8 @@
             android:layout_centerVertical="true"
             android:layout_marginStart="10dp"
             android:src="@drawable/loading_circle_2"
-            app:layout_heightPercent="40%h"
-            app:layout_widthPercent="40%h" />
+            app:layout_heightPercent="35%h"
+            app:layout_widthPercent="35%h" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
             android:layout_centerInParent="true"
             android:text="@string/login_wechat_authorized"
             android:textColor="@color/colorCompanyDark"
-            app:layout_textSizePercent="27%h" />
+            app:layout_textSizePercent="25%h" />
 
     </com.hiber.tools.layout.PercentRelativeLayout>
 

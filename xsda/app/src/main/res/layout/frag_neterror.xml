@@ -20,7 +20,7 @@
             android:text="你的手机好像没网了"
             android:textColor="@color/colorCompany"
             app:layout_marginTopPercent="5%h"
-            app:layout_textSizePercent="2.5%h" />
+            app:layout_textSizePercent="2%h" />
 
         <TextView
             android:id="@+id/tv_neterror_logo"
@@ -31,7 +31,7 @@
             android:text="@string/neterror"
             android:textColor="@color/colorCompany"
             app:layout_marginBottomPercent="10%h"
-            app:layout_textSizePercent="6%h" />
+            app:layout_textSizePercent="5%h" />
 
         <TextView
             android:id="@+id/tv_neterror_retry"
